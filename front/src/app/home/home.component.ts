@@ -17,6 +17,10 @@ export class HomeComponent implements OnInit {
       data=>{this.users=data
       console.log(data)}
     )
+    this.auth.postUsers().subscribe(
+      data=>{this.users=data
+      console.log(data)}
+    )
   }
 
 }

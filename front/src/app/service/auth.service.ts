@@ -10,6 +10,9 @@ export class AuthService {
     private http:HttpClient
   ) { }
   getUsers(){
-    return this.http.get('https://jsonplaceholder.typicode.com/users')
+    return this.http.get('https://jsonplaceholder.typicode.com/posts')
+  }
+  postUsers(){
+    return this.http.post('https://jsonplaceholder.typicode.com/posts',{user:"Dd"})
   }
 }
